@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30DaysOfJavaScript - Day 2</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    
+
+   //Strings
+   //Create the text 'My name is: ' as a string
+   let lastName = ' Eyo';
+   console.log(`My name is ${lastName}`);
+
+   //Create your name as a string (for example: 'Godswill')
+
+   let firstName = 'Godswill';
+   console.log(firstName);
+
+   // Using concatenation, add the 2 strings from 3a and 3b together to create the text: 'My name is: ______' (replace _____ with your name)
+   console.log(`My name is: ${firstName + lastName}`)
+
+
+    /*At a restaurant, you order 1 coffee ($5) and 1 bagel ($3). Using math, calculate the total cost using concatenation, create 
+    the text: 'Total cost: $______' (replace ________ with the total you calculated)*/
+     
+    let costCoffee = 5;
+    let costBagel = 3;
+    totalCost = costBagel + costCoffee;
+     console.log('Total cost: $' + totalCost);
+
+     //Do the same as the last question but use a template string and interpolation
+     console.log(`Total cost: $${totalCost}`);
+
+     /*Display the text in a pop up using alert('')*/
+
+     alert(`Total cost: $${totalCost}`)
+
+     //You order 1 coffee ($5.99) and 1 bagel ($2.95). Using math, calculate the total cost
+     //and using concatenation, create the text: 'Ttal cost: $______' (hint: calculate in cents to avoid inaccuracies)
+
+     let priceCoffee = 599;
+     let priceBagel = 295;
+     let totalPrice = (priceCoffee + priceBagel) / 100;
+     console.log('Total cost: $' + (totalPrice));
+     
+     //Do the same as the last question but use a template string and interpolation
+     console.log(`Total cost: $${totalPrice}`);
+     
+
+     //Display the text from the last question in a popup
+     alert(`Total cost: $${totalPrice}`);
+     
+
+     /*Using a multi-line string, create the text from the last question and add a line of
+     text underneath: 'Thank you, come again!'. Display both lines in a popup*/
+     alert(`Total cost: $${totalPrice}\n Thank you, come again!`);
+
+
+     //Challenge exercise
+     /*In the Amazon project, update the cart to 2 basketballs ($20.95 each) with $4.99 shipping, and 2 t-shirts 
+     ($7.99 each) and $4.99 shipping.*/
+     
+     //Using interpolation, create the first line of text (use math to calculate the numbers 4 and 57.88).
+
+     console.log(`Items (${(2 + 2)}):   $${(2095 * 2  + 499 * 2 )/ 100}`);
+
+      //Create second line of text: 'Shipping & handling: $9.98' (use math)
+      console.log(`Shipping & handling:   $${(499 + 499) / 100}`);
+
+     //Create third line of text: 'Total before tax: $67.86' (use math)
+     console.log(`Total before tax:   $${(5788 + 998) / 100}`);
+
+     //Create fourth line of text: 'Estimated tax (10%): $6.79' (use math)
+     console.log(`Estimated tax (10%):   $${Math.round((5788 + 998) / 1000)}`);
+     
+</script>
